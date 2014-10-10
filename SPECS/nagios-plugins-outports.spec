@@ -30,7 +30,6 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %{_libdir}/nagios/plugins/check_outports
-%doc %{name}-%{version}/README.md %{name}-%{version}/LICENSE
 
 %changelog
 * Fri Oct 10 2014  Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.1-1.vortex
