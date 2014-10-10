@@ -16,6 +16,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 This nagios plugin is used to check the percentage of the free outgoing ports
 available on every network interface.
 
+%prep
 %setup -q -n %{name}-%{version}
 
 %build
@@ -30,6 +31,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %{_libdir}/nagios/plugins/check_outports
+%doc README.md LICENSE
 
 %changelog
 * Fri Oct 10 2014  Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.1-2.vortex
