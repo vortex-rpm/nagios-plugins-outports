@@ -3,7 +3,7 @@
 Summary:	Nagios plugin - check_outports
 Name:		nagios-plugins-outports
 Version:	0.1
-Release:	1.vortex%{?dist}
+Release:	2.vortex%{?dist}
 Vendor:		Vortex RPM
 License:	MIT
 Group:		Applications/System
@@ -22,7 +22,7 @@ available on every network interface.
 
 %install
 rm -rf %{buildroot}
-install -D -p -m 0755 %{SOURCE0} %{buildroot}%{_libdir}/nagios/plugins/check_outports
+install -D -p -m 0755 check_outports %{buildroot}%{_libdir}/nagios/plugins/check_outports
 
 %clean
 rm -rf %{buildroot}
@@ -32,6 +32,9 @@ rm -rf %{buildroot}
 %{_libdir}/nagios/plugins/check_outports
 
 %changelog
+* Fri Oct 10 2014  Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.1-2.vortex
+- Fix.
+
 * Fri Oct 10 2014  Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.1-1.vortex
 - Initial packaging.
 
